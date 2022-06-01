@@ -11,5 +11,10 @@ describe("fizzBuzz", () => {
             expect(fizzBuzz(n)).toEqual("Fizz");
         });
     });
+    [5].forEach(n => {
+        it(`should buzz given a multiple of 5 (ex ${n})`, () => {
+            expect(fizzBuzz(n)).toEqual("Buzz");
+        });
+    });
 });
 
