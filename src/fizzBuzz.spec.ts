@@ -7,7 +7,7 @@ describe("fizzBuzz", () => {
         });
     });
     [3, 6].forEach(n => {
-        it(`should fizz given a multiple of 3 (ex ${n})`, () => {
+        it(`should fizz for multiples of 3 (ex ${n})`, () => {
             expect(fizzBuzz(n)).toEqual("Fizz");
         });
     });
