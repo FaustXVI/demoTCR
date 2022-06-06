@@ -1,4 +1,4 @@
-with import (fetchTarball https://github.com/NixOS/nixpkgs/archive/21.11.tar.gz) {};
+with import (fetchTarball https://github.com/NixOS/nixpkgs/archive/22.05.tar.gz) {};
 
 let
     tcrdd = callPackage (fetchFromGitHub {
@@ -11,5 +11,5 @@ let
 in
 stdenv.mkDerivation {
   name = "dojo-env";
-  buildInputs = [nodejs tcrdd];
+  buildInputs = [nodejs tcrdd jetbrains.idea-ultimate];
 }

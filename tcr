@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+tcrdd -g -l npm run test
