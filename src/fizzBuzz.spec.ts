@@ -1,6 +1,6 @@
 import {fizzBuzz} from "./fizzBuzz";
 
-describe("fizzBuzzBazz", () => {
+describe("fizzBuzz", () => {
     [1, 2].forEach(n => {
         it(`should echo in the default case ${n}`, () => {
             expect(fizzBuzz(n)).toEqual(`${n}`);
